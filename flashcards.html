@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/flashcards.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/flashcards.js"></script>
+    <title>Study Time!</title>
+  </head>
+  <body class="conatiner">
+    <div class="container Jumbotron">
+      <h1>Flashcards</h1>
+      <h2>Time to study!</h2>
+    </div>
+    <div class="container ">
+      <div class="col-md-6">
+        <div class="panel-success">
+          <div class="panel-heading">
+          <h2 class="panel-title">Select a Term</h2>
+        </div>
+          <div class="panel-body">
+            <form class="">
+            <select class="showTerm">
+              <option value= "1">JavaScript(js)</option>
+              <option value= "2">Operators</option>
+              <option value= "3">Variables</option>
+              <option value= "4">Variable naming conventions</option>
+              <option value= "5">Functions</option>
+              <option value= "6">Methods</option>
+              <option value= "7">Arguments</option>
+              <option value= "8">Parameters</option>
+              <option value= "9">Return</option>
+              <option value= "10">Chaining methods</option>
+              <option value= "11">Strings</option>
+              <option value= "12">Booleans</option>
+              <option value= "13">Undefined</option>
+              <option value= "14">NaN</option>
+              <option value= "15">Escape</option>
+              <option value= "16">Alert</option>
+              <option value= "17">Comments</option>
+              <option value= "18">jQuery</option>
+              <option value= "19">Attributes</option>
+            </select>
+            <button id="selectTerm" type="button" class="btn btn-success">Show the Definition</button>
+            </form>
+          </div>
+      </div>
+      <div class="row col-md-12">
+        <div class="panel-success">
+          <div class="panel-heading">
+          <h2 class="panel-title">Definition</h2>
+        </div>
+            <div class="panel-body">
+              <ul class="hidden">
+                <li>An object-oriented computer programming language commonly used to create interactive effects within web browsers.</li>
+                <li>JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more.</li>
+                <li>JavaScript variables are containers for storing data values.</li>
+                <li>Coding conventions are style guidelines for programming. An example is camel script ex> .thisIsCamelScript</li>
+                <li>A JavaScript function is a block of code designed to perform a particular task.
+                  A JavaScript function is executed when "something" invokes it (calls it).</li>
+                <li>JavaScript methods are the actions that can be performed on objects.
+                  A JavaScript method is a property containing a function definition.</li>
+                <li>Arguments are values passed to the function when it is invoked.</li>
+                <li>Parameters are variables listed as a part of the function definition.</li>
+                <li>The return statement stops the execution of a function and returns a value from that function.</li>
+                <li>Method chaining is a technique that can be used to simplify code in
+                  scenarios that involve calling multiple functions on the same object consecutively.</li>
+                <li>A JavaScript string stores a series of characters like "John Doe".
+                  A string can be any text inside double or single quotes.</li>
+                <li>A JavaScript Boolean represents one of two values: true or false.</li>
+                <li>The undefined property indicates that a variable has not been assigned a value.</li>
+                <li>The initial value of NaN is Not-A-Number — the same as the value of Number.NaN.
+                   In modern browsers, NaN is a non-configurable, non-writable property.
+                    Even when this is not the case, avoid overriding it.</li>
+                <li>he escape function returns a string value (in Unicode format) that
+                   contains the contents of charstring. All spaces, punctuation, accented
+                   characters, and any other non-ASCII characters are replaced with %xx encoding,
+                    where xx is equivalent to the hexadecimal number representing the character.</li>
+                <li>The alert() method displays an alert box with a specified message and an OK button.
+                  An alert box is often used if you want to make sure information comes through to the user.</li>
+                <li>JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+                  JavaScript comments can also be used to prevent execution, when testing
+                  alternative code. JavaScript comments are initiated by "//"</li>
+                <li>jQuery is a fast, small, and feature-rich JavaScript library. It makes things
+                   like HTML document traversal and manipulation, event handling, animation,
+                   and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</li>
+                <li>Attributes provide additional information about HTML elements.
+                    All HTML elements can have attributes
+                    Attributes provide additional information about an element
+                    Attributes are always specified in the start tag
+                    Attributes usually come in name/value pairs like: name="value"</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

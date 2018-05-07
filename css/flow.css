@@ -1,0 +1,22 @@
+.hospital {
+
+}
+.home {
+
+}
+#breathing {
+
+}
+#bleeding {
+
+}
+.hidden {
+  display: none;
+}
+.result {
+  border-style: solid;
+  border-width: 3px;
+  border-color: tan;
+  height: 25%;
+  width: 25%;
+}

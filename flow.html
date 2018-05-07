@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/flow.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/flow.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="">
+        <div id="breathQ">
+          <select id="breathA">
+            <option value="1">Breathing</option>
+            <option value="2">Not breathing</option>
+          </select>
+          <button id="breathButton" type="button" class="btn btn-success">Next question</button>
+        </div>
+        <div class="hidden" id="bleedQ">
+          <select id="bleedA">
+            <option value="1">Bleeding</option>
+            <option value="2">Not bleeding</option>
+          </select>
+          <button id="bleedButton" type="button" class="btn btn-warning">Next question</button>
+        </div>
+      </form>
+    </div>
+    <div class="result">
+      <span class="hospital hidden">GO TO THE HOSPITAL</span>
+      <span class="home hidden">GO HOME</span>
+    </div>
+  </body>
+</html>

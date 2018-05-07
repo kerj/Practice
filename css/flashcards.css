@@ -1,0 +1,81 @@
+li, .Jumbotron {
+  color: purple;
+  font-weight: bold;
+}
+.container {
+  background-color: slategray;
+}
+body:not(.container) {
+  background-color: purple;
+}
+.panel-title {
+  font-weight: bold;
+  text-align: center;
+}
+.showTerm {
+  color: purple;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.crazy {
+  background-color: cyan;
+}
+.showJavaScript > li:not(:nth-child(1)) {
+  display: none;
+}
+.showOperators > li:not(:nth-child(2)) {
+  display: none;
+}
+.showVariables > li:not(:nth-child(3)) {
+  display: none;
+}
+.showVariablenamingconventions > li:not(:nth-child(4)) {
+  display: none;
+}
+.showFunctions > li:not(:nth-child(5)) {
+  display: none;
+}
+.showMethods > li:not(:nth-child(6)) {
+  display: none;
+}
+.showArguments > li:not(:nth-child(7)) {
+  display: none;
+}
+.showParameters > li:not(:nth-child(8)) {
+  display: none;
+}
+.showReturn > li:not(:nth-child(9)) {
+  display: none;
+}
+.showChainingmethods > li:not(:nth-child(10)) {
+  display: none;
+}
+.showStrings > li:not(:nth-child(11)) {
+  display: none;
+}
+.showBooleans > li:not(:nth-child(12)) {
+  display: none;
+}
+.showUndefined > li:not(:nth-child(13)) {
+  display: none;
+}
+.showNaN > li:not(:nth-child(14)) {
+  display: none;
+}
+.showEscape > li:not(:nth-child(15)) {
+  display: none;
+}
+.showAlert > li:not(:nth-child(16)) {
+  display: none;
+}
+.showComments > li:not(:nth-child(17)) {
+  display: none;
+}
+.showjQuery > li:not(:nth-child(18)) {
+  display: none;
+}
+.showAttributes > li:not(:nth-child(19)) {
+  display: none;
+}
