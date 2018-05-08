@@ -12,6 +12,9 @@ $(document).ready(function() {
     }else if ($('#moose').hasClass('hide')) {
       $('#infoMoose').toggleClass('hide');
       $('#moose').toggleClass('hide');
+    }else if ($('#dino').hasClass('hide')) {
+      $('#infoDino').toggleClass('hide');
+      $('#dino').toggleClass('hide');
     }else{
 
     }
@@ -29,6 +32,9 @@ $(document).ready(function() {
     }else if ($('#moose').hasClass('hide')) {
       $('#infoMoose').toggleClass('hide');
       $('#moose').toggleClass('hide');
+    }else if ($('#dino').hasClass('hide')) {
+      $('#infoDino').toggleClass('hide');
+      $('#dino').toggleClass('hide');
     }else{
 
     }
@@ -46,7 +52,31 @@ $(document).ready(function() {
     }else if ($('#snake').hasClass('hide')) {
       $('#infoSnake').toggleClass('hide');
       $('#snake').toggleClass('hide');
+    }else if ($('#dino').hasClass('hide')) {
+      $('#infoDino').toggleClass('hide');
+      $('#dino').toggleClass('hide');
     }else{
+
+    }
+  });
+  $('#infoDino').click(function() {
+    $(this).toggleClass('hide');
+    $('#dino').toggleClass('hide');
+  });
+  $('#dino').click(function() {
+    $(this).toggleClass('hide');
+    $('#infoDino').toggleClass('hide');
+    if ($('#beetle').hasClass('hide')){
+      $('#infoBeetle').toggleClass('hide');
+      $('#beetle').toggleClass('hide');
+    }else if ($('#snake').hasClass('hide')) {
+      $('#infoSnake').toggleClass('hide');
+      $('#snake').toggleClass('hide');
+    }else if ($('#moose').hasClass('hide')) {
+      $('#infoMoose').toggleClass('hide');
+      $('#moose').toggleClass('hide');
+    }else{
+
     }
   });
 });
