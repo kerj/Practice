@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/voteInfo.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/voteInfo.js"></script>
+    <title>Vote</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="canVote">
+        <form class="col-lg-4" id="voteLocation">
+          <label for="voteLocation">Voter locations in each state:</label>
+          <select class="form-control" id="voteLocation">
+            <option value="1">California</option>
+            <option value="2">Ohio</option>
+          </select>
+        </form>
+
+        <form class="form-horizontal" id="voteRegister">
+          <div class="form-group">
+          <label class="control-label col-lg-4" for="needToRegister">Do you need to register to vote?</label>
+            <input  type="radio" name="needToRegister" value="1">Yes</input>
+            <input type="radio" name="needToRegister" value="2">No</input>
+          </div>
+        </form>
+        <div>
+          <button class="btn btn-success col-lg-12" id="submit">Submit</button>
+        </div>
+      </div>
+      <div id="cantVote">
+        <h1 class="jumbotron">You must be 18+ to vote!</h1>
+        <p>Here are some voter info links!</p>
+        <ul>
+          <li><a href="">Voter requirements</a></li>
+          <li><a href="">Voter history</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

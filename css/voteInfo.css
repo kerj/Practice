@@ -1,0 +1,6 @@
+.form-horizontal {
+  padding-top: 3%;
+}
+#canVote, #cantVote {
+  display: none;
+}
