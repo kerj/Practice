@@ -1,15 +1,17 @@
 $(document).ready(function()  {
   $("#btn").click(function() {
-  var phrase = $('#phrase').val().split('')
-  console.log(phrase)
-  var vowels = ['a', 'e', 'i', 'o', 'u'];
-  for(var vowelSearch = 0; vowels.length >= vowelSearch; vowelSearch += 1)  {
-    if (phrase.includes(vowels[vowelSearch]) == true) {
-    console.log(phrase)         //I want this to check the array for matches/\/\/\/\
-  }else
-    console.log(phrase)
+  var phrase = $('#phrase').val().toLowerCase().split('')
+  var removeThese = ['a', 'e', 'i', 'o', 'u'];
+
+  for(var eachLetter = 0; phrase.length -1 >= eachLetter; eachLetter += 1)  {
+    for(var vowelSearch =  0; removeThese.length -1 >= vowelSearch; vowelSearch += 1)  {
+      if(phrase[eachLetter] == removeThese[vowelSearch])  {
+        phrase.splice(eachLetter, 1, "-")
+      }else
+        eachLetter + 1
+    }
   }
-  console.log(phrase)
+  $("#display").append(phrase.join(""))
   });
 });
 //Create a website that uses a method to replace vowels in a string with the
