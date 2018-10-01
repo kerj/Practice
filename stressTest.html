@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/stressTest.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/stressTest.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stess Test Quiz</h2>
+      </div>
+      <form id="testQuestions">
+        <div class="form-group">
+          <p>In the past month, check all that you have expeirenced an increase effect/occurences of:</p>
+          <input type="checkbox" name="stressSymptom" value="acne">Acne <br>
+          <input type="checkbox" name="stressSymptom" value="headache">Headaches <br>
+          <input type="checkbox" name="stressSymptom" value="chronicPain">Chronic Pain <br>
+          <input type="checkbox" name="stressSymptom" value="sickness">Sickness <br>
+          <input type="checkbox" name="stressSymptom" value="decreasedEnergy">Less Energy <br>
+          <input type="checkbox" name="stressSymptom" value="dropInSexualDrive">Low Sex Drive <br>
+          <input type="checkbox" name="stressSymptom" value="digestiveIssues">Digestion Issues <br>
+          <input type="checkbox" name="stressSymptom" value="changeInAppetite">Changes to Appetite <br>
+          <input type="checkbox" name="stressSymptom" value="depression">Depression <br>
+          <input type="checkbox" name="stressSymptom" value="rapidHeartbeat">Heartrate <br>
+          <input type="checkbox" name="stressSymptom" value="sweating">Sweating <br>
+        </div>
+        <div class="form-group">
+          <p>In the past month, check all that health issues you have experienced:</p>
+          <input type="checkbox" name="stressHealth" value="headache">Headaches <br>
+          <input type="checkbox" name="stressHealth" value="heartBurn">Heart Burn <br>
+          <input type="checkbox" name="stressHealth" value="depression">Depressed feeling <br>
+          <input type="checkbox" name="stressHealth" value="insomnia">Insomnia <br>
+          <input type="checkbox" name="stressHealth" value="highBlood">High Blood Pressure <br>
+          <input type="checkbox" name="stressHealth" value="tenseMuscles">Tense Muscles <br>
+          <input type="checkbox" name="stressHealth" value="stomachache">Stomachache <br>
+          <input type="checkbox" name="stressHealth" value="anxiety">Anxiety <br>
+        </div>
+        <div class="form-group">
+          <p>In what ways do you manage your stess levels, check all that apply:</p>
+          <input type="checkbox" name="stressManage" value="exercise">Excercise <br>
+          <input type="checkbox" name="stressManage" value="reading">Read <br>
+          <input type="checkbox" name="stressManage" value="writing">Write <br>
+          <input type="checkbox" name="stressManage" value="talkingItOut">Talking with Friends/Family <br>
+          <input type="checkbox" name="stressManage" value="music">Listen to Music <br>
+          <input type="checkbox" name="stressManage" value="meditate">Meditate <br>
+          <input type="checkbox" name="stressManage" value="timeManagement">Use Time Management Skills <br>
+          <input type="checkbox" name="stressManage" value="idStress">Identify Sources of Stress <br>
+          <input type="checkbox" name="stressManage" value="laugh">Laughing/Smileing <br>
+          <input type="checkbox" name="stressManage" value="breakFromStress">Take Breaks form Stress Situations <br>
+        </div>
+        <button type="submit">Submit Survey</button>
+      </form>
+      <span id="results"></span>
+    </div>
+  </body>
+</html>
