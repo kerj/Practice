@@ -6,16 +6,13 @@ $(document).ready(function()  {
     var manage = [];
 
     $("input:checkbox[name=stressSymptom]:checked").each(function() {
-      var sypmtomValue = $(this).val();
-      symptom.push(sypmtomValue)
+      symptom.push($(this).val())
     });
     $("input:checkbox[name=stressHealth]:checked").each(function() {
-      var healthValue = $(this).val();
-      health.push(healthValue)
+      health.push($(this).val())
     });
     $("input:checkbox[name=stressManage]:checked").each(function() {
-      var manageValue = $(this).val();
-      manage.push(manageValue)
+      manage.push($(this).val())
     });
     if (symptom.length + health.length > manage.length*2) {
       $('#results').append("<p>" + "You may have an unhealthy amount of unmanaged stress, look for ways to either reduce the amount of stress in life or pick up more healthy habits to manage your stressful activities." + "</p>")
