@@ -3,35 +3,33 @@ $(document).ready(function()  {
     event.preventDefault();
     var toTranslate = $("#sentence").val().toLowerCase().split(" ");
     var vowels = ['a', 'e', 'i', 'o', 'u'];
-    var consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
-    var pigLatin = []
+    var pigLatin = [];
 
     for(var wordCount = 0; toTranslate.length -1 >= wordCount; wordCount +=1) {
       var word = toTranslate[wordCount].split("");
       for(var vowelSearch = 0; vowels.length -1 >= vowelSearch; vowelSearch +=1)  {
-        if(word[0] === vowels[vowelSearch] && word.length >= 2)  {
+        if(vowels.indexOf(word[0]) != -1)  {
          word.splice(word.length,0,"way")
          vowelSearch += vowelSearch.length
          pigLatin.push(word.join(''))
-       }else if(word[0] === vowels[vowelSearch] && word.length == 1) {
-         word.splice(word.length,0,"ay")
-         vowelSearch += vowelSearch.length
-         pigLatin.push(word.join(''))
-        }else if(vowels.indexOf(word[0]) == -1 ) {
-         vowelSearch += vowelSearch.length
-         pigLatin.push(word.join(''))
-        }else {
+       }else {
+        var conSplit = word.join("")
+         for(var i = 0 ; vowels.length -1 >= i; i++) {
+          if(i == 0 || firstVowel == -1 || conSplit.indexOf(vowels[i]) < firstVowel && conSplit.indexOf(vowels[i]) > 0) {
+            var firstVowel = conSplit.indexOf(vowels[i])
+          }
         }
+        var word1st = word.slice(firstVowel +1)
+        var word2nd = conSplit.split("", firstVowel)
+        var vowelSplit = word.slice(firstVowel, firstVowel +1)
+        if(word.slice(firstVowel, firstVowel +1) == "u" && conSplit.indexOf("q") != -1 )
+         var word2nd = conSplit.split("", firstVowel +1)
+         var vowelSplit = []
+        var complete = pigLatin.push(vowelSplit.join("") + word1st.join("") + word2nd.join("") + "ay")
+        vowelSearch += vowelSearch.length
       }
     }
-
-    //for(var vowelSearch = 0; vowels.length -1 >= vowelSearch; vowelSearch +=1)  {
-    //  if(toTranslate[0] === vowels[vowelSearch] && toTranslate.length == 1)  {
-    //    toTranslate.splice(toTranslate.length,0,"ay")
-    //  }else if(toTranslate[0] === vowels[vowelSearch] && toTranslate.length >= 2)
-  //      toTranslate.splice(toTranslate.length,0,"way")
-
-
+  }
     $("#results").prepend("<li>" + (pigLatin.join(" ")) + "</li>")
   });
 });
