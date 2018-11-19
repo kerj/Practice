@@ -22,9 +22,10 @@ $(document).ready(function()  {
         var word1st = word.slice(firstVowel +1)
         var word2nd = conSplit.split("", firstVowel)
         var vowelSplit = word.slice(firstVowel, firstVowel +1)
-        if(word.slice(firstVowel, firstVowel +1) == "u" && conSplit.indexOf("q") != -1 )
+        if(word.slice(firstVowel, firstVowel +1) == "u" && conSplit.indexOf("q") != -1 ) {
          var word2nd = conSplit.split("", firstVowel +1)
          var vowelSplit = []
+       }
         var complete = pigLatin.push(vowelSplit.join("") + word1st.join("") + word2nd.join("") + "ay")
         vowelSearch += vowelSearch.length
       }
